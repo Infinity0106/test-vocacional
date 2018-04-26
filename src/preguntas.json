@@ -1,0 +1,22 @@
+{
+  "p1": {
+    "question": "are you happy",
+    "answers": [
+      { "text": "yes", "route": "p1_1" },
+      { "text": "no", "route": "p1_2" }
+    ]
+  },
+  "p1_1": {
+    "result": "keep doing what your are doing"
+  },
+  "p1_2": {
+    "question": "Do you want to be happy",
+    "answers": [
+      { "text": "yes", "route": "p1_2_1" },
+      { "text": "no", "route": "p1_1" }
+    ]
+  },
+  "p1_2_1": {
+    "result": "change somethig"
+  }
+}
