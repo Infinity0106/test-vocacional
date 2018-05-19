@@ -1,59 +1,117 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import quiz from "./preguntas.json";
+import questions from "./preguntas";
+import Welcome from "./welcome";
+import Question from "./question";
+import Result from "./result";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      postion: "p1"
+      height: 1,
+      width: 1,
+      actual: -1,
+      final: [],
+      questions,
+      route: []
     };
   }
-  componentWillMount() {}
+  componentWillMount() {
+    var tmp = [];
+    for (var i = 0; i < this.state.questions.length; i++) {
+      tmp.push(i);
+    }
+    tmp.sort((a, b) => Math.random() - 0.5);
+    this.setState({ route: tmp });
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        {this.renderQuestion()}
+      <div
+        style={{
+          flex: 1,
+          textAlign: "center",
+          backgroundColor: "#34495e",
+          position: "relative"
+        }}
+      >
+        <div
+          ref={input => {
+            this.card = input;
+          }}
+          style={{
+            width: "60%",
+            backgroundColor: "white",
+            borderRadius: 10,
+            margin: "0 auto",
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            marginLeft: -(this.state.width / 2),
+            marginTop: -(this.state.height / 2),
+            paddingTop: 20,
+            paddingBottom: 20
+          }}
+          className="shadow"
+        >
+          {this.state.actual === -1 && (
+            <Welcome
+              start={() => this.setState({ actual: this.state.route[0] })}
+            />
+          )}
+          {this.state.actual > -1 && (
+            <Question
+              question={this.state.questions[this.state.actual]}
+              answer={val => this.storeAnswer(val)}
+              back={() => this.regresar()}
+              next={() => this.siguiente()}
+            />
+          )}
+          {this.state.actual === -2 && (
+            <Result questions={this.state.questions} />
+          )}
+        </div>
       </div>
     );
   }
 
-  renderQuestion() {
-    if (quiz[this.state.postion].result === undefined) {
-      var list = quiz[this.state.postion].answers.map(ele => {
-        return (
-          <li>
-            <a href="#" onClick={e => this.changePosition(ele.route)}>
-              {ele.text}
-            </a>
-          </li>
-        );
-      });
-      return (
-        <div>
-          <div>{quiz[this.state.postion].question}</div>
-          <ul>{list}</ul>
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <p>{quiz[this.state.postion].result}</p>
-          <a href="#" onClick={e => this.changePosition("p1")}>
-            re-take
-          </a>
-        </div>
-      );
+  componentDidMount() {
+    this.changeCard();
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (prevState.actual !== this.state.actual) {
+      this.changeCard();
     }
   }
 
-  changePosition(opt) {
-    this.setState({ postion: opt });
+  changeCard() {
+    var height = this.card.clientHeight;
+    var width = this.card.clientWidth;
+    this.setState({ width, height });
+  }
+
+  storeAnswer(val) {
+    var tmp = this.state.questions;
+    tmp[this.state.actual].selected = val;
+    this.setState({ questions: tmp });
+  }
+
+  siguiente() {
+    if (this.state.actual !== this.state.route[this.state.route.length - 1]) {
+      var i = this.state.route.indexOf(this.state.actual);
+      this.setState({ actual: this.state.route[i + 1] });
+    } else if (
+      this.state.actual === this.state.route[this.state.route.length - 1]
+    ) {
+      this.setState({ actual: -2 });
+    }
+  }
+  regresar() {
+    if (this.state.actual !== this.state.route[0]) {
+      var i = this.state.route.indexOf(this.state.actual);
+      this.setState({ actual: this.state.route[i - 1] });
+    }
   }
 }
 

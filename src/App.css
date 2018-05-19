@@ -1,28 +1,104 @@
-.App {
-  text-align: center;
+body > #root > div {
+  height: 100vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+html, body, #app, #app>div {
+  height: 100%
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.shadow {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
-.App-title {
-  font-size: 1.5em;
+ul {
+  list-style-type: none;
 }
 
-.App-intro {
-  font-size: large;
+.column {
+  float: left;
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a{
+  cursor: pointer;
+  color: #12CBC4;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #1abc9c;
+}
+
+.answer1 {
+background-color:#75d6c3;
+margin:5px;
+margin-left: 30px;
+margin-right: 30px;
+border-radius: 5px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.answer5:hover,
+.answer4:hover,
+.answer3:hover,
+.answer2:hover,
+.answer1:hover {
+  background-color:#12CBC4;
+}
+
+.answer2 {
+background-color:#5ed0b9;
+margin:5px;
+margin-left: 30px;
+margin-right: 30px;
+border-radius: 5px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.answer3 {
+background-color:#47c9af;
+margin:5px;
+margin-left: 30px;
+margin-right: 30px;
+border-radius: 5px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.answer4 {
+background-color:#30c2a5;
+margin:5px;
+margin-left: 30px;
+margin-right: 30px;
+border-radius: 5px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.answer5 {
+background-color:#1abc9c;
+margin:5px;
+margin-left: 30px;
+margin-right: 30px;
+border-radius: 5px;
+padding-top: 10px;
+padding-bottom: 10px;
 }
