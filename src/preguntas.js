@@ -1,3 +1,8 @@
+/**
+ * archivo donde guardas las preugntas que debes d ehaer par acada carrera
+ * si la carrera no esta dada de alta en el arhicov carreras.js va haber problemas en
+ * la ejecucion del programa.
+ */
 module.exports = [
   {
     question: "¿Que tanto te gustaría trabajar en equipo médico?",
@@ -13,24 +18,24 @@ module.exports = [
     question: "¿Te gusta la idea de trabajar como investigador?",
     selected: 0,
     career: "IB"
+  },
+  {
+    question:
+      "<p>¿Te agrada la idea de dar mantenimiento a base de datos?<br/><b>Nota:</b>las bases de datos es una biblioteca de información para programas de computadora</p>",
+    selected: 0,
+    career: "IAS"
+  },
+  {
+    question:
+      "<p>¿Te gustaría diseñar programas de seguridad informática?<br/><b>Nota:</b>Estos son programas que evitan hackeos y virus de computadora</p>",
+    selected: 0,
+    career: "IAS"
+  },
+  {
+    question: "¿Te interesaría trabajar en desarrollo de software?",
+    selected: 0,
+    career: "IAS"
   }
-  // {
-  //   question:
-  //     "<p>¿Te agrada la idea de dar mantenimiento a base de datos?<br/><b>Nota:</b>las bases de datos es una biblioteca de información para programas de computadora</p>",
-  //   selected: 0,
-  //   career: "IAS"
-  // },
-  // {
-  //   question:
-  //     "<p>¿Te gustaría diseñar programas de seguridad informática?<br/><b>Nota:</b>Estos son programas que evitan hackeos y virus de computadora</p>",
-  //   selected: 0,
-  //   career: "IAS"
-  // },
-  // {
-  //   question: "¿Te interesaría trabajar en desarrollo de software?",
-  //   selected: 0,
-  //   career: "IAS"
-  // },
   // {
   //   question:
   //     "¿Te agrada la idea de trabajar en el diseño de estructuras aeroespaciales?",
