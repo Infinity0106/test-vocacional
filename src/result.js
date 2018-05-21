@@ -89,12 +89,14 @@ export default class Result extends Component {
             </h1>
             <div className="row">
               <div className="column">
-                <img
+              <a href={item.link} target={"_blank"}>
+                <img  
                   key={index}
                   src={item.image}
                   alt=""
-                  style={{ width: "25%" }}
+                  style={{ height: "70%", width: "70%"  }}
                 />
+              </a>
               </div>
               <div
                 className="column"

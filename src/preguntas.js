@@ -5,12 +5,12 @@
  */
 module.exports = [
   {
-    question: "¿Que tanto te gustaría trabajar en equipo médico?",
+    question: "<p>¿Que tanto te gustaría trabajar en equipo médico?<br/><b>Nota:</b>Un equipo médico es cualquier dispositivo usado para diagnosticar, curar o tratar una enfermedad o para prevenirla.</p>",
     selected: 0,
     career: "IB"
   },
   {
-    question: "¿Te parece interesante el diseño y mantenimiento de prótesis?",
+    question: "<p>¿Te parece interesante el diseño y mantenimiento de prótesis?<br/><b>Nota:</b>Una prótesis es una extensión artificial que reemplaza o provee una parte del cuerpo que falta por diversas razones.</p>",
     selected: 0,
     career: "IB"
   },
@@ -21,13 +21,13 @@ module.exports = [
   },
   {
     question:
-      "<p>¿Te agrada la idea de dar mantenimiento a base de datos?<br/><b>Nota:</b>las bases de datos es una biblioteca de información para programas de computadora</p>",
+      "<p>¿Te agrada la idea de dar mantenimiento a base de datos?<br/><b>Nota:</b>Las bases de datos es una biblioteca de información para programas de computadora.</p>",
     selected: 0,
     career: "IAS"
   },
   {
     question:
-      "<p>¿Te gustaría diseñar programas de seguridad informática?<br/><b>Nota:</b>Estos son programas que evitan hackeos y virus de computadora</p>",
+      "<p>¿Te gustaría diseñar programas de seguridad informática?<br/><b>Nota:</b>Estos son programas que evitan hackeos y virus de computadora.</p>",
     selected: 0,
     career: "IAS"
   },

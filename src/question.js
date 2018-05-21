@@ -28,10 +28,9 @@ export default class Question extends Component {
         />
         <ul>
           {/*
-            este <a> es para poder dar click y amdnar llamar la funcion de selct anser
+            este <a> es para poder dar click y mandar llamar la funcion de select answer
             y toma como parametro el 1,2 3,4,5 que es la ponderacion cada preugnta
-            (se hace bind(this)) por que si no se ejecutaria muchas veces (es un
-            pero mas complejo de contextos y si quuieres despues te lo explico)
+            (se hace bind(this)) por que si no se ejecutaria muchas veces 
           */}
           <a
             onClick={this.selectAnswer.bind(this, 1)}

@@ -59,7 +59,11 @@ class App extends Component {
             marginLeft: -(this.state.width / 2),
             marginTop: -(this.state.height / 2),
             paddingTop: 20,
-            paddingBottom: 20
+            paddingBottom: 20,
+            paddingRight: 20,
+            paddingLeft: 20,
+            maxHeight: 500,
+            overflow: "scroll"
           }}
           className="shadow"
         >

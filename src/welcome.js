@@ -5,7 +5,7 @@ export default class Welcome extends Component {
     return (
       <div>
         <p style={{ marginBottom: 20, fontSize: 20, fontFamily: "monospace" }}>
-          Bienvenido al mejor test vocacional de tu vida
+          Bienvenido al Test de Orientación Vocal
         </p>
         <a
           onClick={() => this.props.start()}
