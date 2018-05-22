@@ -66,7 +66,22 @@ export default class Result extends Component {
    * funcion estandear que meustar los resultados
    */
   render() {
-    return <div>{this.results()}</div>;
+    return (
+      <div>
+        {this.results()}
+        <a
+          onClick={() => this.props.restart()}
+          style={{
+            color: "inherit",
+            textDecoration: "none"
+          }}
+        >
+          <ul>
+            <li className="answer5">Volver a presentar</li>
+          </ul>
+        </a>
+      </div>
+    );
   }
 
   /**
@@ -89,14 +104,14 @@ export default class Result extends Component {
             </h1>
             <div className="row">
               <div className="column">
-              <a href={item.link} target={"_blank"}>
-                <img  
-                  key={index}
-                  src={item.image}
-                  alt=""
-                  style={{ height: "70%", width: "70%"  }}
-                />
-              </a>
+                <a href={item.link} target={"_blank"}>
+                  <img
+                    key={index}
+                    src={item.image}
+                    alt=""
+                    style={{ height: "70%", width: "70%" }}
+                  />
+                </a>
               </div>
               <div
                 className="column"

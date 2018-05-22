@@ -4,6 +4,7 @@ import questions from "./preguntas"; // el arhciov de preugnats almacenadas
 import Welcome from "./welcome"; //clase para pode mostrar la patnalla inicial
 import Question from "./question"; //clase para poder mostrar las preugnatas
 import Result from "./result"; //clase para mostar resultados
+import Background from "./img/fondo.jpeg";
 
 class App extends Component {
   constructor(props) {
@@ -41,6 +42,11 @@ class App extends Component {
           flex: 1,
           textAlign: "center",
           backgroundColor: "#34495e",
+          backgroundImage: `url(${Background})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100%",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
           position: "relative"
         }}
       >
@@ -105,7 +111,10 @@ class App extends Component {
             para poder en la clase de result calcular el resultado final.
           */}
           {this.state.actual === -2 && (
-            <Result questions={this.state.questions} />
+            <Result
+              questions={this.state.questions}
+              restart={this.restartTest.bind(this)}
+            />
           )}
         </div>
       </div>
@@ -178,6 +187,17 @@ class App extends Component {
       var i = this.state.route.indexOf(this.state.actual);
       this.setState({ actual: this.state.route[i - 1] });
     }
+  }
+
+  restartTest() {
+    var new_questions = this.state.questions;
+    var tmp = [];
+    for (var i = 0; i < this.state.questions.length; i++) {
+      new_questions[i].selected = 0;
+      tmp.push(i);
+    }
+    tmp.sort((a, b) => Math.random() - 0.5);
+    this.setState({ route: tmp, actual: tmp[0], question: new_questions });
   }
 }
 

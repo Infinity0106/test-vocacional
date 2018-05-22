@@ -5,12 +5,14 @@
  */
 module.exports = [
   {
-    question: "<p>¿Que tanto te gustaría trabajar en equipo médico?<br/><b>Nota:</b>Un equipo médico es cualquier dispositivo usado para diagnosticar, curar o tratar una enfermedad o para prevenirla.</p>",
+    question:
+      "<p>¿Que tanto te gustaría trabajar en equipo médico?<br/><b>Nota:</b>Un equipo médico es cualquier dispositivo usado para diagnosticar, curar o tratar una enfermedad o para prevenirla.</p>",
     selected: 0,
     career: "IB"
   },
   {
-    question: "<p>¿Te parece interesante el diseño y mantenimiento de prótesis?<br/><b>Nota:</b>Una prótesis es una extensión artificial que reemplaza o provee una parte del cuerpo que falta por diversas razones.</p>",
+    question:
+      "<p>¿Te parece interesante el diseño y mantenimiento de prótesis?<br/><b>Nota:</b>Una prótesis es una extensión artificial que reemplaza o provee una parte del cuerpo que falta por diversas razones.</p>",
     selected: 0,
     career: "IB"
   },
@@ -35,149 +37,149 @@ module.exports = [
     question: "¿Te interesaría trabajar en desarrollo de software?",
     selected: 0,
     career: "IAS"
-  },
-  {
-    question:
-      "¿Te agrada la idea de trabajar en el diseño de estructuras aeroespaciales?",
-    selected: 0,
-    career: "IA"
-  },
-  {
-    question:
-      "<p>¿Te gustaría desarrollar sistemas de navegación?<br/><b>Nota:</b>Son sistemas que ayudan a mantener a las aeronaves en equilibrio. También</p>",
-    selected: 0,
-    career: "IA"
-  },
-  {
-    question:
-      "<p>¿Te interesa trabajar con simulación de vuelo?<br/><b>Nota:</b>Esto sería un programa con el que se puede predecir si funcionara la aeronave.</p>",
-    selected: 0,
-    career: "IA"
-  },
-  {
-    question:
-      "<p>¿Que tanto te gustaría trabajar en la automatización de procesos?<br/><b>Nota:</b>que la producción sea controlada por robots que no requieren asistencia humana</p>",
-    selected: 0,
-    career: "EA"
-  },
-  {
-    question: "¿Te gustaría desarrollar dispositivos electrónicos?",
-    selected: 0,
-    career: "EA"
-  },
-  {
-    question: "¿Te interesa dar mantenimiento a redes telefónicas?",
-    selected: 0,
-    career: "EA"
-  },
-  {
-    question: "¿Te gustaría administrar sistemas de comunicación?",
-    selected: 0,
-    career: "EC"
-  },
-  {
-    question: "¿Qué tanto te gustaría Estructuras?",
-    selected: 0,
-    career: "EC"
-  },
-  {
-    question: "¿Te interesa trabajar revisando la calidad de los productos?",
-    selected: 0,
-    career: "EC"
-  },
-  {
-    question:
-      "¿Te gustaría trabajar diseñando partes de máquinas en computadora?",
-    selected: 0,
-    career: "M"
-  },
-  {
-    question: "¿Qué tanto te gustaría Estructuras?",
-    selected: 0,
-    career: "M"
-  },
-  {
-    question: "¿Te interesa trabajar revisando la calidad de los productos?",
-    selected: 0,
-    career: "M"
-  },
-  {
-    question: "¿Te gusta diseñar y trabajar con sistemas inteligentes?",
-    selected: 0,
-    career: "IM"
-  },
-  {
-    question: "¿Te interesa crear y diseñar sistemas robóticos?",
-    selected: 0,
-    career: "IM"
-  },
-  {
-    question: "¿Te interesa la electrónica y los sistemas automatizados?",
-    selected: 0,
-    career: "IM"
-  },
-  {
-    question: "¿Te interesa trabajar en el procesamiento de materiales?",
-    selected: 0,
-    career: "LIM"
-  },
-  {
-    question:
-      "¿Te gusta trabajar con el diseño e implementación de estructuras?",
-    selected: 0,
-    career: "LIM"
-  },
-  {
-    question:
-      "¿Te interesa aprender sobre las características de los materiales en los procesos industriales?",
-    selected: 0,
-    career: "LIM"
-  },
-  {
-    question:
-      "¿Te interesa la administración y gestión de recursos dentro de la ingeniería?",
-    selected: 0,
-    career: "IMA"
-  },
-  {
-    question: "¿Te ves siendo líder de un grupo de personas?",
-    selected: 0,
-    career: "IMA"
-  },
-  {
-    question: "¿Te interesan los proyectos a largo plazo?",
-    selected: 0,
-    career: "IMA"
-  },
-  {
-    question: "¿Te gusta el manejo de máquinas?",
-    selected: 0,
-    career: "IME"
-  },
-  {
-    question: "¿Te interesa la mecánica?",
-    selected: 0,
-    career: "IME"
-  },
-  {
-    question:
-      "¿Te gusta el diseño y mantenimiento de mecanismos y sistemas electromecánicos?",
-    selected: 0,
-    career: "IME"
-  },
-  {
-    question: "¿Te gusta el desarrollo de software?",
-    selected: 0,
-    career: "ITS"
-  },
-  {
-    question: "¿Te gusta la programación?",
-    selected: 0,
-    career: "ITS"
-  },
-  {
-    question: "¿Te gusta el diseño de páginas web?",
-    selected: 0,
-    career: "ITS"
   }
+  // {
+  //   question:
+  //     "¿Te agrada la idea de trabajar en el diseño de estructuras aeroespaciales?",
+  //   selected: 0,
+  //   career: "IA"
+  // },
+  // {
+  //   question:
+  //     "<p>¿Te gustaría desarrollar sistemas de navegación?<br/><b>Nota:</b>Son sistemas que ayudan a mantener a las aeronaves en equilibrio. También</p>",
+  //   selected: 0,
+  //   career: "IA"
+  // },
+  // {
+  //   question:
+  //     "<p>¿Te interesa trabajar con simulación de vuelo?<br/><b>Nota:</b>Esto sería un programa con el que se puede predecir si funcionara la aeronave.</p>",
+  //   selected: 0,
+  //   career: "IA"
+  // },
+  // {
+  //   question:
+  //     "<p>¿Que tanto te gustaría trabajar en la automatización de procesos?<br/><b>Nota:</b>que la producción sea controlada por robots que no requieren asistencia humana</p>",
+  //   selected: 0,
+  //   career: "EA"
+  // },
+  // {
+  //   question: "¿Te gustaría desarrollar dispositivos electrónicos?",
+  //   selected: 0,
+  //   career: "EA"
+  // },
+  // {
+  //   question: "¿Te interesa dar mantenimiento a redes telefónicas?",
+  //   selected: 0,
+  //   career: "EA"
+  // },
+  // {
+  //   question: "¿Te gustaría administrar sistemas de comunicación?",
+  //   selected: 0,
+  //   career: "EC"
+  // },
+  // {
+  //   question: "¿Qué tanto te gustaría Estructuras?",
+  //   selected: 0,
+  //   career: "EC"
+  // },
+  // {
+  //   question: "¿Te interesa trabajar revisando la calidad de los productos?",
+  //   selected: 0,
+  //   career: "EC"
+  // },
+  // {
+  //   question:
+  //     "¿Te gustaría trabajar diseñando partes de máquinas en computadora?",
+  //   selected: 0,
+  //   career: "M"
+  // },
+  // {
+  //   question: "¿Qué tanto te gustaría Estructuras?",
+  //   selected: 0,
+  //   career: "M"
+  // },
+  // {
+  //   question: "¿Te interesa trabajar revisando la calidad de los productos?",
+  //   selected: 0,
+  //   career: "M"
+  // },
+  // {
+  //   question: "¿Te gusta diseñar y trabajar con sistemas inteligentes?",
+  //   selected: 0,
+  //   career: "IM"
+  // },
+  // {
+  //   question: "¿Te interesa crear y diseñar sistemas robóticos?",
+  //   selected: 0,
+  //   career: "IM"
+  // },
+  // {
+  //   question: "¿Te interesa la electrónica y los sistemas automatizados?",
+  //   selected: 0,
+  //   career: "IM"
+  // },
+  // {
+  //   question: "¿Te interesa trabajar en el procesamiento de materiales?",
+  //   selected: 0,
+  //   career: "LIM"
+  // },
+  // {
+  //   question:
+  //     "¿Te gusta trabajar con el diseño e implementación de estructuras?",
+  //   selected: 0,
+  //   career: "LIM"
+  // },
+  // {
+  //   question:
+  //     "¿Te interesa aprender sobre las características de los materiales en los procesos industriales?",
+  //   selected: 0,
+  //   career: "LIM"
+  // },
+  // {
+  //   question:
+  //     "¿Te interesa la administración y gestión de recursos dentro de la ingeniería?",
+  //   selected: 0,
+  //   career: "IMA"
+  // },
+  // {
+  //   question: "¿Te ves siendo líder de un grupo de personas?",
+  //   selected: 0,
+  //   career: "IMA"
+  // },
+  // {
+  //   question: "¿Te interesan los proyectos a largo plazo?",
+  //   selected: 0,
+  //   career: "IMA"
+  // },
+  // {
+  //   question: "¿Te gusta el manejo de máquinas?",
+  //   selected: 0,
+  //   career: "IME"
+  // },
+  // {
+  //   question: "¿Te interesa la mecánica?",
+  //   selected: 0,
+  //   career: "IME"
+  // },
+  // {
+  //   question:
+  //     "¿Te gusta el diseño y mantenimiento de mecanismos y sistemas electromecánicos?",
+  //   selected: 0,
+  //   career: "IME"
+  // },
+  // {
+  //   question: "¿Te gusta el desarrollo de software?",
+  //   selected: 0,
+  //   career: "ITS"
+  // },
+  // {
+  //   question: "¿Te gusta la programación?",
+  //   selected: 0,
+  //   career: "ITS"
+  // },
+  // {
+  //   question: "¿Te gusta el diseño de páginas web?",
+  //   selected: 0,
+  //   career: "ITS"
+  // }
 ];
